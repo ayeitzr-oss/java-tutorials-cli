@@ -1,8 +1,10 @@
-# Java Tutorials CLI
+## Run on macOS (Terminal)
+```bash
+java --version
 
-## How to run
-1. Make sure you have Java installed.
-2. Compile:
-   javac -d out src/com/learnjava/*.java
-3. Run:
-   java -cp out com.learnjava.Menu
+git clone https://github.com/ayeitzr-oss/java-tutorials-cli.git
+cd java-tutorials-cli
+mkdir -p out
+javac -d out $(find src -name "*.java")
+java -cp out com.learnjava.Menu
+
